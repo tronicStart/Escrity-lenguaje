@@ -1,0 +1,8 @@
+text "El resultado de 12 * 36 + 182 / 1936 es: "
+resolver(12 * 36 + 182 / 1936)
+text "El resultado de 45 * 785 / 78 es: "
+resolver(45 * 785 / 78)
+text "Si multiplicamos un numero por cualquier otro"
+text "y despues eso lo divindimos por el segundo termino"
+text "tendremos como resultado el primer termino"
+text "Ejemplo: 67 * 23 / 23 es 67"
