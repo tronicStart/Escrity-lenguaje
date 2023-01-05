@@ -144,7 +144,7 @@ class LexicalError(Exception):
 
 # Prueba el analizador léxico con algunos códigos
 try:
-    filename2 = "archivo.es"
+    filename2 = "archivo.ty"
     file_name = input('>> ')
     _, ext1 = os.path.splitext(file_name)
     _, ext2 = os.path.splitext(filename2)
