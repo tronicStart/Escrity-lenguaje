@@ -8,6 +8,7 @@ el otro es una guía(*.ty) y ejemplo de como sera la sintaxis(*.txt) de este len
 Lo que el Escrity soporta actualmente:
 * Imprision de texto
 * Resolver expresiones aritmeticas.            
+
 Lo que se esta trabajando o se añadira soporte:
 * Creacion de variables tipo: int, float y string
 * Poder usar las variables para diferentes cosas como para imprimirla, etc
