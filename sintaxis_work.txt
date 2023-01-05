@@ -1,0 +1,23 @@
+integer ¿var_int? = 12
+floating ¿var_float? = 3.14
+string ¿var_string? = "Hi"
+
+text "integer " with ¿var_int?
+text "floating " with ¿var_float?
+text "string " with ¿var_string?
+
+if(1 is 1 or 1 == 2){
+     
+     text "Hi"
+     
+} else {
+
+     text "bye"
+
+}
+
+while(true){
+      
+      text "repeat"
+      
+}
