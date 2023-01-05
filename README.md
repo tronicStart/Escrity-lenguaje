@@ -7,7 +7,7 @@ Uno es el archivo de ejemplo para ser utilizado para probar Escrity o crear el s
 el otro es una guía y ejemplo de como sera la sintaxis de este lenguaje
 Lo que el Escrity soporta actualmente:
 * Imprision de texto
-* Resolver expresiones aritmeticas
+* Resolver expresiones aritmeticas.            
 Lo que se esta trabajando o se añadira soporte:
 * Creacion de variables tipo: int, float y string
 * Poder usar las variables para diferentes cosas como para imprimirla, etc
