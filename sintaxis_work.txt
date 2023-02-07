@@ -1,23 +1,57 @@
-integer ¿var_int? = 12
-floating ¿var_float? = 3.14
-string ¿var_string? = "Hi"
+@Declaración de variables
+log FPS = 30
+log SCREENWIDTH = 288
+log SCREENHEIGHT = 512
+log PIPEGAPSIZE = 100
 
-text "integer " with ¿var_int?
-text "floating " with ¿var_float?
-text "string " with ¿var_string?
+@Declaración de vectores y matrices
+log table[3][3]
+log space[100]
 
-if(1 is 1 or 1 == 2){
-     
-     text "Hi"
-     
-} else {
+@Llenar estos vectores y matrices
 
-     text "bye"
+@Matrices de modo manual
+table[0][0] = 1
+table[0][1] = 1
+table[0][2] = 1
+table[1][0] = 1
+table[1][1] = 1
+table[1][2] = 1
+table[2][0] = 1
+table[2][1] = 1
+table[2][2] = 1
 
+@Matrices de modo con bucle for
+for(log i = 0; i < 3; i++){
+    for(log j = 0; j < 3; j++){
+        table[i][j] = 2
+    }
 }
 
-while(true){
-      
-      text "repeat"
-      
+@Vectores de modo manual
+space[1] = 120
+space[2] = 52
+space[3] = 11
+
+@Vectores con bucles
+for(log i = 0; i < space.length; i++){
+    space[i]
+}
+
+text "FPS: "::FPS::end
+
+@Pintar un cuadrado
+log square = draw.square
+square.x = 5
+square.y = 5
+
+for(log i = 0; i < 5; i++){
+    text ""::square.x.i::end
+    text ""::square.y.i::end
+}
+@condicionales
+if(square.x is 5){
+     square.x++
+} else{
+     square.x--
 }
