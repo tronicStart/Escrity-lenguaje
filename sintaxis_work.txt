@@ -22,8 +22,8 @@ table[2][1] = 1
 table[2][2] = 1
 
 @Matrices de modo con bucle for
-for(log i = 0; i < 3; i++){
-    for(log j = 0; j < 3; j++){
+for(log i = 0%i < 3%i++){
+    for(log j = 0%j < 3%j++){
         table[i][j] = 2
     }
 }
@@ -34,7 +34,7 @@ space[2] = 52
 space[3] = 11
 
 @Vectores con bucles
-for(log i = 0; i < space.length; i++){
+for(log i = 0%i < space.length%i++){
     space[i]
 }
 
