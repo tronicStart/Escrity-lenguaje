@@ -19,7 +19,18 @@ token_patterns = [
     (r'[\(\)\[\]\{\}\<\>\&.,:;]', 'DELIMITER'),
     (r'\s+', 'WHITESPACE'),
     (r'--.*', 'COMMENT'),
+    (r'log','DECLARTORVARIABLES'),
+    (r'::','USEVARIBLE'),
+    (r'end','END'),
+    (r'draw.square','DRAWSQUARE'),
+    (r'x','POSX'),
+    (r'y','POSY'),
 ]
+
+#ejemplo para declarar una variable
+#log nombre_variable = 56
+#Uso de la variable
+#text "Tu edad es: "::nombre_de_la_variable::end
 
 def tokenize(code):
     # Crea una lista de tokens a partir del código
