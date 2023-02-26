@@ -1,57 +1,44 @@
-@Declaración de variables
-log FPS = 30
-log SCREENWIDTH = 288
-log SCREENHEIGHT = 512
-log PIPEGAPSIZE = 100
+La sintaxis que va a ver aqui por el momento no funciona por el momento
+es solo para poder guiarse y saber como debe ser la sintaxis
+Forma para declar variables
+log variable_char = "dato"
+log variable_int = 100
+log variable_float = 3.1416
 
-@Declaración de vectores y matrices
-log table[3][3]
-log space[100]
+Forma de comentar el codigo
+@Comentario
 
-@Llenar estos vectores y matrices
+Forma de imprimir texto
+text "Imprime un texto"
+StringPrint "Imprime un texto"
+Forma de resolver operaciónes arthmeticas
+resolver(5*5)
+operation(6*6)
+5 * 5 / 25
 
-@Matrices de modo manual
-table[0][0] = 1
-table[0][1] = 1
-table[0][2] = 1
-table[1][0] = 1
-table[1][1] = 1
-table[1][2] = 1
-table[2][0] = 1
-table[2][1] = 1
-table[2][2] = 1
+Algunos operadores
+++ Incremento
+-- Decremento
++= Mas igual
+-= Menos igual
+< Mayor que
+> Menor que
+<= Mayor o igual que
+=> Menor o igual que
+== Igual
+is Igual
+= Asignación de una variable
 
-@Matrices de modo con bucle for
-for(log i = 0%i < 3%i++){
-    for(log j = 0%j < 3%j++){
-        table[i][j] = 2
-    }
-}
+Los bucles, condicionales y funciones
+while true do
+end
 
-@Vectores de modo manual
-space[1] = 120
-space[2] = 52
-space[3] = 11
+for log i = 0%i < 5%i++ do
+end
 
-@Vectores con bucles
-for(log i = 0%i < space.length%i++){
-    space[i]
-}
+if i is 6 do
+end
 
-text "FPS: "::FPS::end
+function nombre_funcion ()
+end
 
-@Pintar un cuadrado
-log square = draw.square
-square.x = 5
-square.y = 5
-
-for(log i = 0; i < 5; i++){
-    text ""::square.x.i::end
-    text ""::square.y.i::end
-}
-@condicionales
-if(square.x is 5){
-     square.x++
-} else{
-     square.x--
-}
