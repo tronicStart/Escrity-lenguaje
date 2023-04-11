@@ -12,7 +12,7 @@ jobs:
     - name: Checkout destination repository
       uses: actions/checkout@v2
       with:
-        repository: tronicStart/Escrity-lenguaje
+        repository: D:/a/Escrity-lenguaje/Escrity-lenguaje
         path: dest-repo
 
     - name: Configure git
