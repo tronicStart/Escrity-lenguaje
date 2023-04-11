@@ -1,0 +1,31 @@
+name: Push changes to destination repository
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout destination repository
+      uses: actions/checkout@v2
+      with:
+        repository: tronicStart/Escrity-lenguaje
+        path: dest-repo
+
+    - name: Configure git
+      run: |
+        git config --global user.email "sitenewgames@gmail.com"
+        git config --global user.name "tronicStart"
+
+    - name: Copy source files to destination repository
+      run: cp -r . dest-repo
+
+    - name: Commit changes and push to destination repository
+      run: |
+        cd dest-repo
+        git add .
+        git commit -m "Update from source repository"
+        git push
