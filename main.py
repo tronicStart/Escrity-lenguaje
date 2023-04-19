@@ -4,6 +4,7 @@ import os
 # Define los patrones de tokens
 token_patterns = [
     (r'\btext\b', 'PRINT'),
+    (r'\bprintE\b', 'PRINT'),
     (r'\bresolver\b', 'RESOLVER'),
     (r'"(?:[^"\\]|\\.)*"', 'STRING'),
     (r'\bif\b', 'IF'),
