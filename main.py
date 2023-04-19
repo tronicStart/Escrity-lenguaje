@@ -6,11 +6,13 @@ token_patterns = [
     (r'\btext\b', 'PRINT'),
     (r'\bprintE\b', 'PRINT'),
     (r'\bresolver\b', 'RESOLVER'),
+    (r'\boperation\n', 'RESOLVER'), 
     (r'"(?:[^"\\]|\\.)*"', 'STRING'),
     (r'\bif\b', 'IF'),
+    (r'\belse\b', 'ELSE'),
     (r'\bwhile\b', 'WHILE'),
     (r'\bfor\b', 'FOR'),
-    (r'\bdef\b', 'DEF'),
+    (r'\bfunction\b', 'FUNCTION'),
     (r'\breturn\b', 'RETURN'),
     (r'\btrue\b', 'TRUE'),
     (r'\bfalse\b', 'FALSE'),
@@ -157,7 +159,8 @@ try:
         for linea in lineas:
               print(eval(compile(linea)))
     else:
-         print("Se desconose la extension: *%s" %ext1)
+         print(eval(compile(file_name)))
+         #print("Se desconose la extension: *%s" %ext1)
 except LexicalError as e:
     print(e)
     
