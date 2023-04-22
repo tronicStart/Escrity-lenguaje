@@ -78,8 +78,7 @@ def parse(tokens):
                      node = expression()
                      token = tokens.pop(0)
                      if token[1] != ')':
-                         if token[1] != ';':
-                             raise SyntaxError("Se esperaba ';'")
+                         raise SyntaxError("Se esperaba ';'")
                          return node
                 else:
                      raise SyntaxError("Se esperaba un número, un identificador, un string o '('")
