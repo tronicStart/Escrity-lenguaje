@@ -1,4 +1,4 @@
-text "El resultado de 20 + 20 es:"
-resolver(20+20);
+text "El resultado de 20 + 20 es:";
+resolver(20+20)
 print "El resultado de 20 - 30 es:"
 resolver(20-30)
