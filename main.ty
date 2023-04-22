@@ -1,3 +1,4 @@
+print "Probando operaciones simples: "
 text "El resultado de 20 + 20 es:"
 resolver(20+20)
 print "El resultado de 20 - 30 es:"
@@ -9,3 +10,6 @@ print "El resultado de 40 / 30 es:"
 resolver(40/30)
 text "El resultado de 10 + 20 * 56 / 100 es:"
 resolver(10+20*56/100)
+print "Probando la creacio de funciones: "
+func test (a,b):
+     return a+b
