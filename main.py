@@ -80,7 +80,7 @@ def parse(tokens):
                      if token[1] != ')':
                          if token[1] != ';':
                              raise SyntaxError("Se esperaba ';'")
-                             return node
+                         return node
                 else:
                      raise SyntaxError("Se esperaba un número, un identificador, un string o '('")
                     # Procesa una lista de factores separados por '*' o '/'
