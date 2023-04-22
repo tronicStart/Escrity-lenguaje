@@ -4,7 +4,7 @@ import os
 # Define los patrones de tokens
 token_patterns = [
     (r'\btext\b', 'PRINT'),
-    (r'\bprintE\b', 'PRINT'),
+    (r'\bprint\b', 'PRINT'),
     (r'\bresolver\b', 'RESOLVER'),
     (r'"(?:[^"\\]|\\.)*"', 'STRING'),
     (r'\bif\b', 'IF'),
@@ -78,8 +78,9 @@ def parse(tokens):
                      node = expression()
                      token = tokens.pop(0)
                      if token[1] != ')':
-                         raise SyntaxError("Se esperaba ')'")
-                     return node
+                         if token[1] != ';':
+                             raise SyntaxError("Se esperaba ';'")
+                             return node
                 else:
                      raise SyntaxError("Se esperaba un número, un identificador, un string o '('")
                     # Procesa una lista de factores separados por '*' o '/'
