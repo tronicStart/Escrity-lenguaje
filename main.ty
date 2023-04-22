@@ -1,8 +1,8 @@
 print "codigo 1"
 text "El resultado de 20 + 20 es:"
-resolver(20+20);
+resolver(20+20)
 print "El resultado de 20 - 30 es:"
-resolver(20-30);
+resolver(20-30)
 print "otro codigo: "
 text "El resultado de 10 + 20 es:"
 resolver(10+20)
