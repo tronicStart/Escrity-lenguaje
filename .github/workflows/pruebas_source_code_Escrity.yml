@@ -16,5 +16,5 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-    - name: Run Escrity source
+    - name: Run main.ty
       run: python main.py
