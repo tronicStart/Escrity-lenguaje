@@ -8,5 +8,4 @@ resolver(10*20)
 print "El resultado de 40 / 30 es:"
 resolver(40/30)
 text "El resultado de 10 + 20 * 56 / 100 es:"
-resolver(10 + 20 * 56 / 100)
-
+resolver(10+20*56/100)
